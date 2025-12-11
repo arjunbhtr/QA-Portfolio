@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Portfolio | [Your Name]</title>
+    <title>QA Portfolio | [Arjun Singh]</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons for aesthetic appeal -->
@@ -203,15 +203,6 @@
                 I am actively seeking roles where I can leverage automation to accelerate the delivery of high-quality software.
             </p>
             
-            <!-- JS Demonstration Area -->
-            <div class="mb-6">
-                <p id="js-demo-message" class="text-sm text-gray-500 mb-2">Click the button below to test custom JavaScript integration:</p>
-                <button id="js-test-button" class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition duration-150 font-medium shadow-md">
-                    Run Custom JS Test
-                </button>
-            </div>
-            <!-- End JS Demonstration Area -->
-
             <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
                 <a href="mailto:[Your Email Address]" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-emerald-600 hover:bg-emerald-700 transition duration-150 shadow-lg">
                     <i data-lucide="mail" class="w-5 h-5 mr-2"></i> Email Me
@@ -233,33 +224,6 @@
     <script>
         // Initialize Lucide icons (must be the first JS task)
         lucide.createIcons();
-
-        // --- START: Your Custom JavaScript Logic ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const testButton = document.getElementById('js-test-button');
-            const demoMessage = document.getElementById('js-demo-message');
-
-            if (testButton && demoMessage) {
-                testButton.addEventListener('click', () => {
-                    // This is where you would put any interactive logic for your portfolio
-                    console.log("Custom JS Function Executed: Successfully captured button click.");
-                    
-                    // Simple UI feedback
-                    demoMessage.textContent = "SUCCESS! Custom JS executed. Check your browser console (F12) for the log message.";
-                    demoMessage.classList.remove('text-gray-500');
-                    demoMessage.classList.add('text-blue-600', 'font-bold');
-
-                    // Reset message after 3 seconds
-                    setTimeout(() => {
-                        demoMessage.textContent = "Click the button below to test custom JavaScript integration:";
-                        demoMessage.classList.remove('text-blue-600', 'font-bold');
-                        demoMessage.classList.add('text-gray-500');
-                    }, 3000);
-                });
-            }
-        });
-        // --- END: Your Custom JavaScript Logic ---
-
     </script>
 </body>
 </html>
