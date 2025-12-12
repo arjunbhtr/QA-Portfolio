@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Portfolio | [ Arjun Singh ]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for aesthetic appeal -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #1f2937;
+        }
+        .section-header {
+            border-left: 4px solid #10b981; /* Emerald 500 */
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .project-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-900">
+                <span class="text-emerald-500">QA</span> Portfolio
+            </h1>
+            <nav class="mt-4 md:mt-0 space-x-4">
+                <a href="#projects" class="text-gray-600 hover:text-emerald-600 transition duration-150">Projects</a>
+                <a href="#skills" class="text-gray-600 hover:text-emerald-600 transition duration-150">Skills</a>
+                <a href="#contact" class="text-white bg-emerald-500 hover:bg-emerald-600 px-4 py-2 rounded-lg font-semibold transition duration-150 shadow-md">Get in Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto pt-10 pb-20 px-4 sm:px-6 lg:px-8">
+
+        <!-- Introduction/Hero -->
+        <section class="text-center py-16 bg-white rounded-xl shadow-lg mb-16">
+            <div class="inline-flex items-center justify-center h-20 w-20 rounded-full bg-emerald-100 text-emerald-600 mb-6">
+                <i data-lucide="check-circle" class="w-10 h-10"></i>
+            </div>
+            <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+                [Your Name]
+            </h2>
+            <p class="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
+                **Software Development Engineer in Test (SDET)**: Dedicated to building quality from the ground up, specializing in **Manual Testing Precision**, **REST API Automation**, and robust **UI Automation Frameworks**.
+            </p>
+            <div class="space-x-4">
+                <a href="#projects" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-emerald-600 hover:bg-emerald-700 transition duration-150">
+                    <i data-lucide="wrench" class="w-5 h-5 mr-2"></i> View Technical Projects
+                </a>
+                <a href="https://linkedin.com/in/[YourLinkedInID]" target="_blank" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 transition duration-150">
+                    <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <h3 class="text-3xl font-bold text-gray-900 section-header">
+                Showcase Projects
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Project 1: UI Automation -->
+                <div class="project-card bg-white p-6 rounded-xl border border-gray-200">
+                    <div class="text-emerald-500 mb-3"><i data-lucide="laptop-2" class="w-8 h-8"></i></div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">E2E UI Automation Framework</h4>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Built a scalable, end-to-end regression test suite for a mock e-commerce platform.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm mb-4">
+                        <li>**Technology:** Selenium / Playwright with [Python/Java/JS]</li>
+                        <li>**Architecture:** Page Object Model (POM) implementation.</li>
+                        <li>**Feature:** Automated critical flows (Sign-up, Search, Checkout).</li>
+                        <li>**Impact:** Reduced manual test time by 75%.</li>
+                    </ul>
+                    <a href="[Link to UI Automation GitHub Repo]" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium text-sm flex items-center">
+                        View Codebase <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2: API Automation -->
+                <div class="project-card bg-white p-6 rounded-xl border border-gray-200">
+                    <div class="text-emerald-500 mb-3"><i data-lucide="cloud" class="w-8 h-8"></i></div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">REST API Functional Testing</h4>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Comprehensive validation of a User Management API using industry-standard tools and libraries.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm mb-4">
+                        <li>**Tools:** Postman for manual validation, RestAssured/Requests for automation.</li>
+                        <li>**Coverage:** Tested all CRUD operations ($GET, POST, PUT, DELETE$).</li>
+                        <li>**Validation:** Implemented JSON Schema and data-type validation.</li>
+                        <li>**Feature:** Automated request chaining for token-based authentication.</li>
+                    </ul>
+                    <a href="[Link to Public Postman Collection]" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium text-sm flex items-center">
+                        View Postman Collection <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3: Manual Testing & CI/CD -->
+                <div class="project-card bg-white p-6 rounded-xl border border-gray-200">
+                    <div class="text-emerald-500 mb-3"><i data-lucide="file-text" class="w-8 h-8"></i></div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">QA Process Artifacts & CI/CD</h4>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Demonstrating strategic planning and process integration skills.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm mb-4">
+                        <li>**Artifacts:** Sample Test Plan, Detailed Test Cases (Positive/Negative/Boundary).</li>
+                        <li>**Defect Management:** Example of a high-quality Bug Report using JIRA format.</li>
+                        <li>**Integration:** Configured tests to run on Jenkins/GitHub Actions.</li>
+                        <li>**Process:** Utilized risk-based and exploratory testing methodologies.</li>
+                    </ul>
+                    <a href="[Link to Test Plan PDF on Google Drive]" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium text-sm flex items-center">
+                        View Sample Docs <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16">
+            <h3 class="text-3xl font-bold text-gray-900 section-header">
+                Technical Skills Stack
+            </h3>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Column 1: Automation Tools -->
+                    <div>
+                        <h5 class="font-bold text-lg text-emerald-600 mb-3 flex items-center">
+                            <i data-lucide="code" class="w-5 h-5 mr-2"></i> Automation Tools
+                        </h5>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Selenium WebDriver</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Cypress / Playwright</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> RestAssured / Requests</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Appium (Mobile Testing)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Languages & Database -->
+                    <div>
+                        <h5 class="font-bold text-lg text-emerald-600 mb-3 flex items-center">
+                            <i data-lucide="terminal" class="w-5 h-5 mr-2"></i> Languages & DB
+                        </h5>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Python (Primary)</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Java / JavaScript</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> SQL (Queries & Data Prep)</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> HTML/CSS (Front-end)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: QA & Management Tools -->
+                    <div>
+                        <h5 class="font-bold text-lg text-emerald-600 mb-3 flex items-center">
+                            <i data-lucide="layers" class="w-5 h-5 mr-2"></i> QA Management
+                        </h5>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> JIRA / Azure DevOps</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> TestRail / Zephyr</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Postman / Swagger</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Git & Version Control</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Methodologies -->
+                    <div>
+                        <h5 class="font-bold text-lg text-emerald-600 mb-3 flex items-center">
+                            <i data-lucide="package" class="w-5 h-5 mr-2"></i> Methodologies
+                        </h5>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Agile / Scrum</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> CI/CD Integration</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Exploratory Testing</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Boundary Value Analysis (BVA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center py-12 bg-emerald-50 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                Let's Build Quality Together
+            </h3>
+            <p class="text-lg text-gray-600 mb-8">
+                I am actively seeking roles where I can leverage automation to accelerate the delivery of high-quality software.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="mailto:[Your Email Address]" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-emerald-600 hover:bg-emerald-700 transition duration-150 shadow-lg">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i> Email Me
+                </a>
+                <a href="https://github.com/[YourGitHubID]" target="_blank" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-100 transition duration-150 shadow-lg">
+                    <i data-lucide="github" class="w-5 h-5 mr-2"></i> GitHub Profile
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; 2025 [Your Name] | QA Portfolio.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons (must be the first JS task)
+        lucide.createIcons();
+    </script>
+</body>
+</html>
